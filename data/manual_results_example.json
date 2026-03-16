@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2026-03-16",
+    "home_team": "Liverpool",
+    "away_team": "Newcastle",
+    "home_goals": 2,
+    "away_goals": 1
+  },
+  {
+    "date": "2026-03-16",
+    "home_team": "Real Madrid",
+    "away_team": "Sevilla",
+    "home_goals": 1,
+    "away_goals": 1
+  }
+]

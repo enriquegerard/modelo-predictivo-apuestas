@@ -1,0 +1,42 @@
+[
+  {
+    "date": "2026-03-16",
+    "league": "Premier League",
+    "home_team": "Liverpool",
+    "away_team": "Newcastle",
+    "start_time": "2026-03-16T19:00:00Z",
+    "best_odds_home": 1.75,
+    "best_odds_draw": 4.10,
+    "best_odds_away": 4.90
+  },
+  {
+    "date": "2026-03-16",
+    "league": "La Liga",
+    "home_team": "Real Madrid",
+    "away_team": "Sevilla",
+    "start_time": "2026-03-16T20:00:00Z",
+    "best_odds_home": 1.68,
+    "best_odds_draw": 4.00,
+    "best_odds_away": 5.40
+  },
+  {
+    "date": "2026-03-17",
+    "league": "Serie A",
+    "home_team": "Milan",
+    "away_team": "Napoli",
+    "start_time": "2026-03-17T19:45:00Z",
+    "best_odds_home": 2.35,
+    "best_odds_draw": 3.40,
+    "best_odds_away": 3.15
+  },
+  {
+    "date": "2026-03-17",
+    "league": "Premier League",
+    "home_team": "Manchester City",
+    "away_team": "Brighton",
+    "start_time": "2026-03-17T19:30:00Z",
+    "best_odds_home": 1.60,
+    "best_odds_draw": 4.30,
+    "best_odds_away": 5.80
+  }
+]

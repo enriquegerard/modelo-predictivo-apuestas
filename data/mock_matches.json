@@ -1,0 +1,98 @@
+[
+  {
+    "match_id": "m1",
+    "date": "2026-03-14",
+    "league": "Premier League",
+    "league_code": "PL",
+    "home_team": "Arsenal",
+    "away_team": "Everton",
+    "start_time": "2026-03-14T15:00:00Z",
+    "status": "FINISHED",
+    "home_goals": 2,
+    "away_goals": 0
+  },
+  {
+    "match_id": "m2",
+    "date": "2026-03-14",
+    "league": "La Liga",
+    "league_code": "PD",
+    "home_team": "Barcelona",
+    "away_team": "Valencia",
+    "start_time": "2026-03-14T20:00:00Z",
+    "status": "FINISHED",
+    "home_goals": 3,
+    "away_goals": 1
+  },
+  {
+    "match_id": "m3",
+    "date": "2026-03-15",
+    "league": "Premier League",
+    "league_code": "PL",
+    "home_team": "Chelsea",
+    "away_team": "Tottenham",
+    "start_time": "2026-03-15T16:30:00Z",
+    "status": "FINISHED",
+    "home_goals": 1,
+    "away_goals": 1
+  },
+  {
+    "match_id": "m4",
+    "date": "2026-03-15",
+    "league": "Serie A",
+    "league_code": "SA",
+    "home_team": "Inter",
+    "away_team": "Lazio",
+    "start_time": "2026-03-15T19:45:00Z",
+    "status": "FINISHED",
+    "home_goals": 2,
+    "away_goals": 1
+  },
+  {
+    "match_id": "m5",
+    "date": "2026-03-16",
+    "league": "Premier League",
+    "league_code": "PL",
+    "home_team": "Liverpool",
+    "away_team": "Newcastle",
+    "start_time": "2026-03-16T19:00:00Z",
+    "status": "SCHEDULED",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
+    "match_id": "m6",
+    "date": "2026-03-16",
+    "league": "La Liga",
+    "league_code": "PD",
+    "home_team": "Real Madrid",
+    "away_team": "Sevilla",
+    "start_time": "2026-03-16T20:00:00Z",
+    "status": "SCHEDULED",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
+    "match_id": "m7",
+    "date": "2026-03-17",
+    "league": "Serie A",
+    "league_code": "SA",
+    "home_team": "Milan",
+    "away_team": "Napoli",
+    "start_time": "2026-03-17T19:45:00Z",
+    "status": "SCHEDULED",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
+    "match_id": "m8",
+    "date": "2026-03-17",
+    "league": "Premier League",
+    "league_code": "PL",
+    "home_team": "Manchester City",
+    "away_team": "Brighton",
+    "start_time": "2026-03-17T19:30:00Z",
+    "status": "SCHEDULED",
+    "home_goals": null,
+    "away_goals": null
+  }
+]
