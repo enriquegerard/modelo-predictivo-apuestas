@@ -124,6 +124,59 @@ Con resultados manuales:
 python -m src.app backtest --start 2026-03-16 --end 2026-03-17 --manual-results data/manual_results_example.json
 ```
 
+### 4) Calculadora de bankroll y meta mensual
+
+```bash
+python -m src.app calculator --bankroll 1000 --target-profit 1000
+```
+
+Opcional:
+
+```bash
+python -m src.app calculator --bankroll 1000 --target-profit 1000 --months 6
+```
+
+Basado en picks reales de una fecha:
+
+```bash
+python -m src.app calculator --bankroll 1000 --target-profit 1000 --based-on-date 2026-03-17
+```
+
+Basado en promedio de un rango de fechas:
+
+```bash
+python -m src.app calculator --bankroll 1000 --target-profit 1000 --from 2026-03-16 --to 2026-03-17
+```
+
+Solo picks verdes:
+
+```bash
+python -m src.app calculator --bankroll 1000 --target-profit 1000 --from 2026-03-16 --to 2026-03-17 --signal-filter green
+```
+
+Últimos 30 días automáticamente:
+
+```bash
+python -m src.app calculator --bankroll 1000 --target-profit 1000 --last-days 30 --signal-filter green
+```
+
+Con fecha final manual:
+
+```bash
+python -m src.app calculator --bankroll 1000 --target-profit 1000 --last-days 30 --end-date 2026-03-17 --signal-filter green
+```
+
+Te muestra:
+
+- retorno mensual requerido sobre la banca,
+- escenarios estimados de ganancia mensual,
+- ROI por apuesta que necesitarías para llegar a la meta,
+- proyección compuesta de ejemplo.
+- opcionalmente, una proyección usando los picks positivos reales detectados en ese día.
+- opcionalmente, una proyección usando el promedio de picks positivos de un rango completo.
+- filtro por señal: `all-positive`, `green-yellow`, `green`.
+- modo automático para últimos `N` días con `--last-days`.
+
 ## Cache, errores y resiliencia
 
 - Cache local SQLite con TTL de 15 minutos (`api_cache`).
