@@ -1,42 +1,42 @@
 [
   {
     "date": "2026-03-16",
-    "league": "Premier League",
-    "home_team": "Liverpool",
-    "away_team": "Newcastle",
+    "league": "Demo League Alpha",
+    "home_team": "Northbridge FC",
+    "away_team": "Harbor United",
     "start_time": "2026-03-16T19:00:00Z",
-    "best_odds_home": 1.75,
-    "best_odds_draw": 4.10,
-    "best_odds_away": 4.90
+    "best_odds_home": 1.82,
+    "best_odds_draw": 3.75,
+    "best_odds_away": 4.60
   },
   {
     "date": "2026-03-16",
-    "league": "La Liga",
-    "home_team": "Real Madrid",
-    "away_team": "Sevilla",
+    "league": "Demo League Beta",
+    "home_team": "Costa Azul SC",
+    "away_team": "Ciudad Central",
     "start_time": "2026-03-16T20:00:00Z",
-    "best_odds_home": 1.68,
-    "best_odds_draw": 4.00,
-    "best_odds_away": 5.40
+    "best_odds_home": 2.05,
+    "best_odds_draw": 3.30,
+    "best_odds_away": 3.70
   },
   {
     "date": "2026-03-17",
-    "league": "Serie A",
-    "home_team": "Milan",
-    "away_team": "Napoli",
+    "league": "Demo League Gamma",
+    "home_team": "Aurora Calcio",
+    "away_team": "Lago FC",
     "start_time": "2026-03-17T19:45:00Z",
-    "best_odds_home": 2.35,
-    "best_odds_draw": 3.40,
-    "best_odds_away": 3.15
+    "best_odds_home": 1.95,
+    "best_odds_draw": 3.45,
+    "best_odds_away": 4.05
   },
   {
     "date": "2026-03-17",
-    "league": "Premier League",
-    "home_team": "Manchester City",
-    "away_team": "Brighton",
+    "league": "Demo League Alpha",
+    "home_team": "Kingsport Town",
+    "away_team": "Riverton Athletic",
     "start_time": "2026-03-17T19:30:00Z",
-    "best_odds_home": 1.60,
-    "best_odds_draw": 4.30,
-    "best_odds_away": 5.80
+    "best_odds_home": 2.55,
+    "best_odds_draw": 3.25,
+    "best_odds_away": 2.88
   }
 ]

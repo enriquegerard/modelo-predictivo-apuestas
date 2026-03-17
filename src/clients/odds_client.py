@@ -8,6 +8,7 @@ from typing import Any
 
 import requests
 
+from src.clients.espn_public import iter_espn_leagues, parse_espn_odds
 from src.config import ROOT_DIR, Settings
 from src.storage.db import LocalDB
 
@@ -64,10 +65,25 @@ class OddsClient:
             return []
         return json.loads(path.read_text(encoding="utf-8"))
 
+    def _espn_get(self, url: str, params: dict[str, Any]) -> dict[str, Any]:
+        data = self._cached_get(url=url, params=params)
+        if isinstance(data, list):
+            return {}
+        return data
+
     def get_odds(self, target_date: date) -> list[dict[str, Any]]:
-        if self.settings.mock_mode or not self.settings.the_odds_api_key:
+        if self.settings.mock_mode:
             day = target_date.isoformat()
             return [o for o in self._read_mock() if o.get("date") == day]
+
+        if not self.settings.the_odds_api_key:
+            rows: list[dict[str, Any]] = []
+            for _, league_slug in iter_espn_leagues(self.settings.leagues):
+                url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{league_slug}/scoreboard"
+                params = {"dates": target_date.strftime("%Y%m%d")}
+                data = self._espn_get(url=url, params=params)
+                rows.extend(parse_espn_odds(data, target_date=target_date))
+            return rows
 
         if target_date != datetime.now(timezone.utc).date():
             return []

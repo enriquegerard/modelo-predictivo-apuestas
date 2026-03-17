@@ -30,7 +30,10 @@ def _load_dotenv(dotenv_path: Path) -> None:
 @pydantic_dataclass
 class Settings:
     timezone: str = Field(default="Europe/Madrid")
-    leagues: List[str] = Field(default_factory=lambda: ["PL", "PD", "SA"])
+    leagues: List[str] = Field(default_factory=lambda: [
+        "PL", "PD", "SA", "BL1", "FL1", "DED", "PPL", "ELC",
+        "TUR", "SPL", "BEL", "CL", "EL", "UECL", "MLS", "MX1", "BSA", "ARG",
+    ])
     odds_sports: List[str] = Field(default_factory=lambda: ["soccer_epl", "soccer_spain_la_liga", "soccer_italy_serie_a"])
     football_data_api_key: str | None = Field(default=None)
     football_data_base_url: str = Field(default="https://api.football-data.org/v4")
